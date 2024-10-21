@@ -14,17 +14,18 @@ A Laravel-based system to manage user subscriptions with options for upgrading, 
 
 ## Prerequisites
 
-- PHP 8.0+
+- PHP 8.2+
 - Composer
 - Node.js & npm
-- MySQL or other supported databases
+- MySQL
+- Redis
 
 ## Installation
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-repository.git
-    cd your-repository
+    git clone https://github.com/seriklav/subscription
+    cd subscription
     ```
 
 2. **Install PHP dependencies:**
