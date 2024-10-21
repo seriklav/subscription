@@ -28,36 +28,36 @@ A Laravel-based system to manage user subscriptions with options for upgrading, 
     cd subscription
     ```
 
-2. **Install PHP dependencies:**
+2. **Clone the repository:**
     ```bash
-    composer install
+    sail up -d
     ```
 
-3. **Install JavaScript dependencies:**
+3. **Install PHP dependencies:**
+    ```bash
+    sail composer install
+    ```
+
+4. **Install JavaScript dependencies:**
     ```bash
     npm install && npm run dev
     ```
 
-4. **Set up the `.env` file:**
+5. **Set up the `.env` file:**
     - Copy the example file and update the necessary values:
     ```bash
     cp .env.example .env
     ```
     - Update database, mail, and other configurations in the `.env` file.
 
-5. **Generate the application key:**
+6. **Generate the application key:**
     ```bash
-    php artisan key:generate
+    sail artisan key:generate
     ```
 
-6. **Run migrations:**
+7. **Run migrations:**
     ```bash
-    php artisan migrate
-    ```
-
-7. **Start the development server:**
-    ```bash
-    php artisan serve
+    sail artisan migrate
     ```
 
 ## Configuration
