@@ -47,7 +47,7 @@ class SubscriptionService
 
         $nextBillingDate = Carbon::parse($subscription->next_billing_date);
 
-        ScheduleSubscriptionUpdateJob::dispatch($subscription)->delay(now()->addMinute());
+        ScheduleSubscriptionUpdateJob::dispatch($subscription)->delay($nextBillingDate);
 
         return $subscription;
     }
